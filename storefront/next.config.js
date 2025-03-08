@@ -42,8 +42,9 @@ const nextConfig = {
       },
       { // Note: added to allow images from Cloudinary
         protocol: "https",
-        hostname: "console.cloudinary.com",
+        hostname: "res.cloudinary.com",
       },
+
       ...(process.env.NEXT_PUBLIC_MINIO_ENDPOINT ? [{ // Note: needed when using MinIO bucket storage for media
         protocol: "https",
         hostname: process.env.NEXT_PUBLIC_MINIO_ENDPOINT,
