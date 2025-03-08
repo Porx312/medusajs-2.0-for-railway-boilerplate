@@ -114,9 +114,9 @@ const Shipping: React.FC<ShippingProps> = ({
                       <Radio
                         checked={option.id === selectedShippingMethod?.id}
                       />
-                      <span className="text-base-regular">{option.name}</span>
+                      <span>{option.name}</span>
                     </div>
-                    <span className="justify-self-end text-ui-fg-base">
+                    <span className="justify-self-end">
                       {convertToLocale({
                         amount: option.amount!,
                         currency_code: cart?.currency_code,
@@ -149,7 +149,7 @@ const Shipping: React.FC<ShippingProps> = ({
           <div className="text-small-regular">
             {cart && (cart.shipping_methods?.length ?? 0) > 0 && (
               <div className="flex flex-col w-1/3">
-                <Text className="txt-medium-plus text-ui-fg-base mb-1">
+                <Text className="txt-medium-plus  mb-1">
                   Method
                 </Text>
                 <Text className="txt-medium text-ui-fg-subtle">

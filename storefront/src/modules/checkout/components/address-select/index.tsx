@@ -36,7 +36,7 @@ const AddressSelect = ({
     <Listbox onChange={handleSelect} value={selectedAddress?.id}>
       <div className="relative">
         <Listbox.Button
-          className="relative w-full flex justify-between items-center px-4 py-[10px] text-left cursor-default focus:outline-none border rounded-rounded focus-visible:ring-2 focus-visible:ring-opacity-75 text-base-regular"
+          className="relative w-full flex justify-between items-center px-4 py-[10px] text-left cursor-default focus:outline-none border rounded-rounded focus-visible:ring-2 focus-visible:ring-opacity-75 "
           data-testid="shipping-address-select"
         >
           {({ open }) => (
@@ -78,15 +78,15 @@ const AddressSelect = ({
                       data-testid="shipping-address-radio"
                     />
                     <div className="flex flex-col">
-                      <span className="text-left text-base-semi">
+                      <span className="text-left">
                         {address.first_name} {address.last_name}
                       </span>
                       {address.company && (
-                        <span className="text-small-regular text-ui-fg-base">
+                        <span className="text-small-regular ">
                           {address.company}
                         </span>
                       )}
-                      <div className="flex flex-col text-left text-base-regular mt-2">
+                      <div className="flex flex-col text-left  mt-2">
                         <span>
                           {address.address_1}
                           {address.address_2 && (

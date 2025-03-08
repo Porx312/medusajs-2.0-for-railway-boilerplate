@@ -12,7 +12,7 @@ type ItemProps = {
 
 const Item = ({ item }: ItemProps) => {
   return (
-    <Table.Row className="w-full" data-testid="product-row">
+    <Table.Row className="w-full bg-inherit hover:bg-inherit" data-testid="product-row">
       <Table.Cell className="!pl-0 p-4 w-24">
         <div className="flex w-16">
           <Thumbnail thumbnail={item.thumbnail} size="square" />
@@ -21,7 +21,7 @@ const Item = ({ item }: ItemProps) => {
 
       <Table.Cell className="text-left">
         <Text
-          className="txt-medium-plus text-ui-fg-base"
+          className="txt-medium-plus text-gray-400"
           data-testid="product-name"
         >
           {item.title}
