@@ -29,8 +29,8 @@ const files = [
       },
       {
         id: "2",
-        name: "Sticker",
-        href: "/sticker",
+        name: "Stickers",
+        href: "/stickers",
         type: "file" as const,
         icon: <Sticker className="h-4 w-4 text-blue-500" />,
       }
