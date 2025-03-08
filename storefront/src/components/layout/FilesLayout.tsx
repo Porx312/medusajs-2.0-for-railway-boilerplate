@@ -1,4 +1,4 @@
-import {  Globe} from 'lucide-react'
+import {  Globe, Sticker} from 'lucide-react'
 import { FileExplorer } from '../FileExplorer'
 import { FaNodeJs,FaJs, FaTshirt } from "react-icons/fa";
 import { SiTypescript } from "react-icons/si";
@@ -16,16 +16,23 @@ const files = [
       {
         id: "2",
         name: "Shirts",
-        href: "/Shirts",
+        href: "/shirts",
         type: "file" as const,
         icon: <IoShirtOutline className="h-4 w-4 text-blue-500" />,
       },
       {
         id: "2",
         name: "Pants",
-        href: "/Pants",
+        href: "/pants",
         type: "file" as const,
         icon: <PiPants className="h-4 w-4 text-blue-500" />,
+      },
+      {
+        id: "2",
+        name: "Sticker",
+        href: "/sticker",
+        type: "file" as const,
+        icon: <Sticker className="h-4 w-4 text-blue-500" />,
       }
      
     ],
@@ -39,20 +46,20 @@ const files = [
           {
             id: "4",
             name: "Typescript.ts",
-            href: "Typescript",
+            href: "typescript",
             type: "file" as const,
             icon: <SiTypescript className="h-4 w-4 text-blue-400" />,
           },
           {
             id: "5",
             name: "Javascript.js",
-            href: "/Javascript",
+            href: "/javascript",
             type: "file" as const,
             icon: <FaJs className="h-4 w-4 text-yellow-400" />,
           },  {
             id: "6",
             name: "Nodejs.js",
-            href: "/Nodejs",
+            href: "/nodejs",
             type: "file" as const,
             icon: <FaNodeJs className="h-4 w-4 text-green-400" />,
           }
