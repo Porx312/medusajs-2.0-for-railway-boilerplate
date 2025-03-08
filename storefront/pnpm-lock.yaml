@@ -17,6 +17,9 @@ importers:
       '@hookform/error-message':
         specifier: ^2.0.0
         version: 2.0.1(react-dom@18.3.1(react@18.3.1))(react-hook-form@7.54.2(react@18.3.1))(react@18.3.1)
+      '@medusajs/icons':
+        specifier: ^2.6.0
+        version: 2.6.0(react@18.3.1)
       '@medusajs/js-sdk':
         specifier: preview
         version: 2.1.4-preview-20241227180154(awilix@8.0.1)
@@ -53,6 +56,9 @@ importers:
       class-variance-authority:
         specifier: ^0.7.1
         version: 0.7.1
+      clsx:
+        specifier: ^2.1.1
+        version: 2.1.1
       cmdk:
         specifier: ^1.0.4
         version: 1.0.4(@types/react-dom@18.3.5(@types/react@18.3.18))(@types/react@18.3.18)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -95,6 +101,9 @@ importers:
       server-only:
         specifier: ^0.0.1
         version: 0.0.1
+      tailwind-merge:
+        specifier: ^3.0.2
+        version: 3.0.2
       tailwindcss-radix:
         specifier: ^2.8.0
         version: 2.9.0
@@ -390,6 +399,11 @@ packages:
 
   '@medusajs/icons@2.1.4-preview-20241227180154':
     resolution: {integrity: sha512-WvgSe9TVNfhR6BH0r4bzCl/na3zQb/s/iqNlYHvj81JTK9j8w5sasoRmQmYPkt0rK/RtZ5/DHry4tSvu62jAcA==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0 || ^19.0.0-rc
+
+  '@medusajs/icons@2.6.0':
+    resolution: {integrity: sha512-igwhY6a4Nm93m8FqBDHtEG0CQ12yV16mKs5JjoXjF3V2nr/7M/ZHOnumduBIXyEv8+rqV1iVgUJfEhL7SP68Xw==}
     peerDependencies:
       react: ^16.8.0 || ^17.0.0 || ^18.0.0 || ^19.0.0 || ^19.0.0-rc
 
@@ -3597,6 +3611,9 @@ packages:
   tailwind-merge@2.5.5:
     resolution: {integrity: sha512-0LXunzzAZzo0tEPxV3I297ffKZPlKDrjj7NXphC8V5ak9yHC5zRmxnOe2m/Rd/7ivsOMJe3JZ2JVocoDdQTRBA==}
 
+  tailwind-merge@3.0.2:
+    resolution: {integrity: sha512-l7z+OYZ7mu3DTqrL88RiKrKIqO3NcpEO8V/Od04bNpvk0kiIFndGEoqfuzvj4yuhRkHKjRkII2z+KS2HfPcSxw==}
+
   tailwindcss-animate@1.0.7:
     resolution: {integrity: sha512-bl6mpH3T7I3UFxuvDEXLxy/VuFxBk5bbzplh7tXI68mwMokNYd1t9qPBHlnyTwfa4JGC4zP516I1hYYtQ/vspA==}
     peerDependencies:
@@ -4142,6 +4159,10 @@ snapshots:
   '@medusajs/client-types@0.2.12-preview-20240505115807': {}
 
   '@medusajs/icons@2.1.4-preview-20241227180154(react@18.3.1)':
+    dependencies:
+      react: 18.3.1
+
+  '@medusajs/icons@2.6.0(react@18.3.1)':
     dependencies:
       react: 18.3.1
 
@@ -8059,6 +8080,8 @@ snapshots:
   supports-preserve-symlinks-flag@1.0.0: {}
 
   tailwind-merge@2.5.5: {}
+
+  tailwind-merge@3.0.2: {}
 
   tailwindcss-animate@1.0.7(tailwindcss@3.4.17):
     dependencies:

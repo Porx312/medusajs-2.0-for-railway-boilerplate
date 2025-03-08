@@ -1,5 +1,4 @@
 import { getBaseURL } from "@lib/util/env"
-import LayoutIde from "components/layout/layout"
 import { Metadata } from "next"
 import "styles/globals.css"
 
@@ -11,10 +10,7 @@ export default function RootLayout(props: { children: React.ReactNode }) {
   return (
     <html lang="en" data-mode="light">
       <body>
-        <LayoutIde>
-
-     {props.children}
-        </LayoutIde>
+        <main className="relative">{props.children}</main>
       </body>
     </html>
   )
