@@ -110,3 +110,88 @@
     @apply text-[32px] leading-[44px] font-semibold;
   }
 }
+:root{
+  --background-main: #15141B;
+
+  --icon:#525156;
+  --icon-active:#5FFFCA;
+  --sidebar-bg:#110F18;
+  --bg-header:#121016;
+  --text-color:#90A4AE;
+  --input-color: #1E1C22;
+  --input-border: #2D2B33;
+  --select-text: #322E46;
+  --notification:#A277FF;
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: red;
+  --background-end-rgb: red;
+
+  /* Scrollbar custom properties */
+  --foreground-rgb: 255, 255, 255;
+  --background-start-rgb: 0, 0, 0;
+  --background-end-rgb: 0, 0, 0;
+
+  /* Dark mode scrollbar colors */
+  --scrollbar-track: 30, 41, 59;
+  --scrollbar-thumb: 71, 85, 105;
+  --scrollbar-thumb-hover: 100, 116, 139;
+}
+@layer utilities {
+  .bg-main {
+    background-color: var(--background-main);
+    color:var(--text-color);
+  }
+  .sidebar-bg {
+    background-color: var(--sidebar-bg);
+  }
+  .bg-header {
+    background-color: var(--bg-header);
+  }
+  .text-color {
+    color: var(--text-color);
+  }
+  .input-color {
+    background-color: var(--input-color);
+  }
+  .input-border {
+    border-color: var(--input-border);
+  }
+  .select-text{ 
+    background-color:var(--select-text);
+  }
+  .icon-active:hover{
+    border-left: 4px solid var(--icon-active);
+  }
+ .icon{
+  background-color: var(--icon);
+ }
+  .notification{
+    background-color: var(--notification);
+  }
+}
+
+/* Global scrollbar styling */
+::-webkit-scrollbar {
+  width: var(--scrollbar-width);
+  height: var(--scrollbar-width);
+}
+
+::-webkit-scrollbar-track {
+  background: rgb(var(--scrollbar-track));
+  border-radius: var(--scrollbar-border-radius);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(var(--scrollbar-thumb));
+  border-radius: var(--scrollbar-border-radius);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(var(--scrollbar-thumb-hover));
+}
+
+/* Firefox scrollbar styling */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgb(var(--scrollbar-thumb)) rgb(var(--scrollbar-track));
+}

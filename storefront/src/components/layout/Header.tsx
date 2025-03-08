@@ -1,21 +1,17 @@
-"use client"
 import React from 'react'
 import { CommandMenu } from '../Command-Menu'
-import { Button } from '../ui/button'
-import { useSidebar } from 'lib/context/SidebarContext'
-import { Menu } from 'lucide-react'
-import LocalizedClientLink from '@modules/common/components/localized-client-link'
-import CartButton from '@modules/layout/components/cart-button'
-import { Suspense } from 'react';
+import ButtonToggle from './ButtonToggle'
+import CartBtn from '@modules/layout/templates/nav'
+
+
 
 const Header = () => {
-  const { toggleSidebar } = useSidebar()
+  
   return (
     <header className="bg-main border-b flex items-center justify-between md:justify-center border-black p-2">
-      <Button variant="default" size="icon" className="md:hidden" onClick={toggleSidebar} aria-label="Toggle sidebar">
-          <Menu className="h-4 w-4" />
-        </Button>
+      <ButtonToggle/>
         <CommandMenu/>
+        <CartBtn/>
        {/*  <Suspense
               fallback={
                 <LocalizedClientLink

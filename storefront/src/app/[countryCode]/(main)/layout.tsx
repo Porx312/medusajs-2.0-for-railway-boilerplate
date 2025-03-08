@@ -14,9 +14,7 @@ export default async function PageLayout(props: { children: React.ReactNode }) {
     <>
     <LayoutIde>
 
-      <Nav />
       {props.children}
-      <Footer />
     </LayoutIde>
     </>
   )

@@ -12,6 +12,7 @@ import LineItemOptions from "@modules/common/components/line-item-options"
 import LineItemPrice from "@modules/common/components/line-item-price"
 import LocalizedClientLink from "@modules/common/components/localized-client-link"
 import Thumbnail from "@modules/products/components/thumbnail"
+import { ShoppingCart } from "lucide-react"
 
 const CartDropdown = ({
   cart: cartState,
@@ -76,13 +77,12 @@ const CartDropdown = ({
       onMouseLeave={close}
     >
       <Popover className="relative h-full">
-        <Popover.Button className="h-full">
-          <LocalizedClientLink
-            className="hover:text-ui-fg-base"
-            href="/cart"
-            data-testid="nav-cart-link"
-          >{`Cart (${totalItems})`}</LocalizedClientLink>
-        </Popover.Button>
+      <Popover.Button className="h-full flex items-center gap-2 px-4 py-2 transition-colors hover:bg-accent rounded-md shadow-md">
+        <ShoppingCart className="h-5 w-5" />
+        <LocalizedClientLink className="hover:text-ui-fg-base font-semibold text-sm" href="/cart" data-testid="nav-cart-link">
+          {`Carrito (${totalItems})`}
+        </LocalizedClientLink>
+      </Popover.Button>
         <Transition
           show={cartDropdownOpen}
           as={Fragment}
@@ -95,7 +95,7 @@ const CartDropdown = ({
         >
           <Popover.Panel
             static
-            className="hidden small:block absolute top-[calc(100%+1px)] right-0 bg-white border-x border-b border-gray-200 w-[420px] text-ui-fg-base"
+            className="hidden small:block absolute top-[calc(100%+1px)] right-0 sidebar-bg  w-[420px] "
             data-testid="nav-cart-dropdown"
           >
             <div className="p-4 flex items-center justify-center">
@@ -130,7 +130,7 @@ const CartDropdown = ({
                           <div className="flex flex-col flex-1">
                             <div className="flex items-start justify-between">
                               <div className="flex flex-col overflow-ellipsis whitespace-nowrap mr-4 w-[180px]">
-                                <h3 className="text-base-regular overflow-hidden text-ellipsis">
+                                <h3 className=" overflow-hidden text-ellipsis">
                                   <LocalizedClientLink
                                     href={`/products/${item.variant?.product?.handle}`}
                                     data-testid="product-link"
@@ -168,7 +168,7 @@ const CartDropdown = ({
                 </div>
                 <div className="p-4 flex flex-col gap-y-4 text-small-regular">
                   <div className="flex items-center justify-between">
-                    <span className="text-ui-fg-base font-semibold">
+                    <span className=" font-semibold">
                       Subtotal{" "}
                       <span className="font-normal">(excl. taxes)</span>
                     </span>
@@ -197,7 +197,7 @@ const CartDropdown = ({
             ) : (
               <div>
                 <div className="flex py-16 flex-col gap-y-4 items-center justify-center">
-                  <div className="bg-gray-900 text-small-regular flex items-center justify-center w-6 h-6 rounded-full text-white">
+                  <div className="bg-gray-900 text-small-regular flex items-center justify-center w-6 h-6 rounded-full">
                     <span>0</span>
                   </div>
                   <span>Your shopping bag is empty.</span>

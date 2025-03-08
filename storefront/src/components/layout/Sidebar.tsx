@@ -7,7 +7,7 @@ import {
   SheetTitle 
 } from "../ui/sheet"
 import { cn } from "lib/utils"
-import { X, Cog, Files, Search, ShoppingCart, UserRound } from 'lucide-react'
+import { Cog, Files, Search, ShoppingCart, UserRound } from 'lucide-react'
 import Link from 'next/link'
 import { useSidebar } from "lib/context/SidebarContext"
 import FilesLayout from "./FilesLayout"
@@ -30,7 +30,7 @@ export default function Sidebar({ className }: SidebarProps) {
           <Files className='w-8 h-8 hover:text-gray-500' />
         </Link>
         <Link 
-          href={"/"} 
+          href={"/search"} 
           className='flex border-l-3 border-transparent hover:border-l-3 hover:border-l-[#5FFFCA] w-15 items-center justify-center transition-colors'
         >
           <Search className='w-8 h-8 hover:text-gray-500' />
