@@ -1,45 +1,61 @@
-import {  Globe,  Shirt} from 'lucide-react'
+import {  Globe} from 'lucide-react'
 import { FileExplorer } from '../FileExplorer'
+import { FaNodeJs,FaJs, FaTshirt } from "react-icons/fa";
+import { SiTypescript } from "react-icons/si";
+import { IoShirtOutline } from "react-icons/io5";
+
+import { PiPants } from "react-icons/pi"
+
 const files = [
   {
     id: "1",
-    name: "Drop",
+    name: "Categories",
     type: "folder" as const,
     children: [
       
       {
         id: "2",
-        name: "New Drop",
+        name: "Shirts",
+        href: "/Shirts",
         type: "file" as const,
-        icon: <Globe className="h-4 w-4 text-blue-500" />,
+        icon: <IoShirtOutline className="h-4 w-4 text-blue-500" />,
+      },
+      {
+        id: "2",
+        name: "Pants",
+        href: "/Pants",
+        type: "file" as const,
+        icon: <PiPants className="h-4 w-4 text-blue-500" />,
       }
+     
     ],
   },
   {
     id: "3",
-    name: "Typescript",
+    name: "Src",
     type: "folder" as const,
     children: [
-     
-      {
-        id: "12",
-        name: "Clothes",
-        type: "folder" as const,
-        children: [
+  
           {
-            id: "13",
-            name: "T-shirts.ts",
+            id: "4",
+            name: "Typescript.ts",
+            href: "Typescript",
             type: "file" as const,
-            icon: <Shirt className="h-4 w-4 text-cyan-500" />,
+            icon: <SiTypescript className="h-4 w-4 text-blue-400" />,
           },
           {
-            id: "14",
-            name: "Hoddies.ts",
+            id: "5",
+            name: "Javascript.js",
+            href: "/Javascript",
             type: "file" as const,
-            icon: <Shirt className="h-4 w-4 text-cyan-500" />,
+            icon: <FaJs className="h-4 w-4 text-yellow-400" />,
+          },  {
+            id: "6",
+            name: "Nodejs.js",
+            href: "/Nodejs",
+            type: "file" as const,
+            icon: <FaNodeJs className="h-4 w-4 text-green-400" />,
           }
-        ],
-      },
     ],
   }
 ]

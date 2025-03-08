@@ -3,10 +3,12 @@
 import * as React from "react"
 import { ChevronDown, ChevronRight, File, Folder, FolderOpen } from "lucide-react"
 import { cn } from "lib/utils"
+import Link from "next/link"
 
 type FileType = {
   id: string
   name: string
+  href?:string
   type: "file" | "folder"
   icon?: React.ReactNode
   children?: FileType[]
@@ -79,7 +81,10 @@ function FileItem({ file, level }: FileItemProps) {
       {isOpen && hasChildren && (
         <div>
           {file.children!.map((child) => (
+            <Link href={`/categories/${child.href}`}>
             <FileItem key={child.id} file={child} level={level + 1} />
+            
+            </Link>
           ))}
         </div>
       )}
