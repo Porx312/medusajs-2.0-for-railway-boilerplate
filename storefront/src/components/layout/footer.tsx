@@ -9,7 +9,7 @@ const Footer = () => {
   
   return (
     <footer className="bg-header border-t  bg-main flex justify-end  border-black p-2  ">
-         <Button  size="icon" className="relative icon hover:bg-gray-800" onClick={() => setIsOpen(true)}>
+       {/*   <Button  size="icon" className="relative icon hover:bg-gray-800" onClick={() => setIsOpen(true)}>
               <Terminal className="h-[1.2rem] w-[1.2rem]" />
               {unreadNotificationsCount > 0 && (
                 <Badge
@@ -19,7 +19,7 @@ const Footer = () => {
                   {unreadNotificationsCount}
                 </Badge>
               )}
-            </Button>
+            </Button> */}
       </footer>
   )
 }

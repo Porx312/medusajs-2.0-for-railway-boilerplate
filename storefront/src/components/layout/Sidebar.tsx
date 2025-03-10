@@ -7,7 +7,7 @@ import {
   SheetTitle 
 } from "../ui/sheet"
 import { cn } from "lib/utils"
-import { Cog, Files, Search, ShoppingCart, UserRound } from 'lucide-react'
+import { Cog, Files, HomeIcon, Search, ShoppingCart, UserRound } from 'lucide-react'
 import Link from 'next/link'
 import { useSidebar } from "lib/context/SidebarContext"
 import FilesLayout from "./FilesLayout"
@@ -23,6 +23,12 @@ export default function Sidebar({ className }: SidebarProps) {
     <>
     <nav className="space-y-2 flex flex-col  md:h-full h-auto w-full items-center justify-between">
       <div className='flex flex-row md:flex-col gap-2.5'>
+      <Link 
+          href={"/"} 
+          className='flex border-l-3 border-transparent hover:border-l-3 hover:border-l-[#5FFFCA] w-15 items-center justify-center transition-colors'
+        >
+          <HomeIcon className='w-8 h-8 hover:text-gray-500' />
+        </Link>
         <Link 
           href={"/store"} 
           className='flex border-l-3 border-transparent hover:border-l-3 hover:border-l-[#5FFFCA] w-15 items-center justify-center transition-colors'

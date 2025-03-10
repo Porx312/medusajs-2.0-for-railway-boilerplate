@@ -66,7 +66,7 @@ const Item = ({ item, type = "full" }: ItemProps) => {
 
       <Table.Cell className="text-left">
         <Text
-          className="txt-medium-plus text-ui-fg-base"
+          className="txt-medium-plus text-gray-500"
           data-testid="product-title"
         >
           {item.product_title}
