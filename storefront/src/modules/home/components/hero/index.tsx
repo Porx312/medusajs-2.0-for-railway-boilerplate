@@ -45,12 +45,12 @@ const Hero = () => {
                 </Button>
               </Link>
 
-              <Link href="/register" className="block">
+              <Link href="/account" className="block">
                 <Button variant="ghost" className="w-full justify-start group hover:bg-accent">
                   <span className="mr-2 text-blue-400">
                     <UserPlus className="h-4 w-4" />
                   </span>
-                  Create Account
+                 Account
                   <ChevronRight className="ml-auto h-4 w-4 opacity-0 group-hover:opacity-100 transition-opacity" />
                 </Button>
               </Link>
@@ -71,7 +71,7 @@ const Hero = () => {
             <h2 className="text-xl font-light border-b border-border pb-2">Featured Products</h2>
 
             <div className="space-y-2">
-              <Link href="/store/shirts" className="block">
+              <Link href="/categories/shirts" className="block">
                 <Button variant="ghost" className="w-full justify-start group hover:bg-accent">
                   <span className="mr-2 text-blue-400">
                     <TShirt className="h-4 w-4" />
@@ -81,7 +81,7 @@ const Hero = () => {
                 </Button>
               </Link>
 
-              <Link href="/store/stickers" className="block">
+              <Link href="/categories/stickers" className="block">
                 <Button variant="ghost" className="w-full justify-start group hover:bg-accent">
                   <span className="mr-2 text-blue-400">
                     <Sticker className="h-4 w-4" />
@@ -91,7 +91,7 @@ const Hero = () => {
                 </Button>
               </Link>
 
-              <Link href="/store/mousepads" className="block">
+              <Link href="/categories/mousepads" className="block">
                 <Button variant="ghost" className="w-full justify-start group hover:bg-accent">
                   <span className="mr-2 text-blue-400">
                     <MousePointer className="h-4 w-4" />

@@ -11,7 +11,7 @@ const Header = () => {
   
   return (
     <header className="bg-main border-b flex items-center justify-between  border-black p-2">
-      <Link href={'/'} className='cursor-pointer'>
+      <Link href={'/'} className='cursor-pointer  hidden md:block'>
       <div className="relative w-12 h-12 flex items-center justify-center ">
           <Image
             src="https://res.cloudinary.com/dq0pfesxe/image/upload/v1741611547/xs_o2ap6y.png"
@@ -22,9 +22,9 @@ const Header = () => {
           />
         </div>
       </Link>
+      <ButtonToggle/>
         <CommandMenu/>
         <CartBtn/>
-      <ButtonToggle/>
        {/*  <Suspense
               fallback={
                 <LocalizedClientLink

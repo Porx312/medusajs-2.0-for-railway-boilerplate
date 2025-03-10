@@ -1,10 +1,9 @@
-import {   Sticker} from 'lucide-react'
+import {   MousePointerBan, Sticker} from 'lucide-react'
 import { FileExplorer } from '../FileExplorer'
 import { SiTypescript, SiPython, SiReact, SiAngular, SiC,SiVuedotjs  } from "react-icons/si";
 import { FaJs, FaNodeJs, FaJava } from "react-icons/fa";
 import { IoShirtOutline } from "react-icons/io5";
-
-import { PiPants } from "react-icons/pi"
+import { LuSquareMousePointer } from "react-icons/lu";
 
 const files = [
   {
@@ -22,10 +21,10 @@ const files = [
       },
       {
         id: "3",
-        name: "Pants",
-        href: "/pants",
+        name: "Mousepads",
+        href: "/mousepads",
         type: "file" as const,
-        icon: <PiPants className="h-4 w-4 text-blue-500" />,
+        icon: <LuSquareMousePointer className="h-4 w-4 text-blue-500" />,
       },
       {
         id: "4",
