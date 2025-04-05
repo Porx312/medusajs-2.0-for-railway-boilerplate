@@ -1,14 +1,9 @@
 "use client"
 import React from 'react'
-import { Button } from '../ui/button'
-import {   Terminal } from 'lucide-react'
-import { useConsole } from 'lib/context/ConsoleProvider'
-import { Badge } from "components/ui/badge"
 const Footer = () => {
-  const { setIsOpen, unreadNotificationsCount, currentUser } = useConsole()
   
   return (
-    <footer className="bg-header border-t  bg-main flex justify-end  border-black p-2  ">
+    <footer className="bg-header border-t h-1 sticky bottom-0 z-100  bg-main flex justify-end  border-black p-2  ">
        {/*   <Button  size="icon" className="relative icon hover:bg-gray-800" onClick={() => setIsOpen(true)}>
               <Terminal className="h-[1.2rem] w-[1.2rem]" />
               {unreadNotificationsCount > 0 && (

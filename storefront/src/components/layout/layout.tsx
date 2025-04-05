@@ -14,8 +14,8 @@ interface LayoutProps {
 
 export default function LayoutIde({ children }: LayoutProps) {
   return (
-    <div className="h-[100vh] flex flex-col justify-between bg-main ">
-    <SidebarProvider >
+    <div className=" flex h-[100vh] flex-col justify-between bg-main ">
+    <SidebarProvider>
     <EcommerceConsoleProvider>
 
       {/* Header */}
@@ -32,9 +32,8 @@ export default function LayoutIde({ children }: LayoutProps) {
   <ResizablePanel defaultSize={85}>
 
         {/* Main Content */}
-        <main className="flex-1 flex relative  flex-col item-center w-full h-[80vh] overflow-y-auto justify-between background-main  ">
+        <main className="flex-1 flex relative  flex-col item-center w-full  overflow-y-auto justify-between background-main  ">
           {children}
-          <EcommerceConsole/>
 
   </main>
   </ResizablePanel>

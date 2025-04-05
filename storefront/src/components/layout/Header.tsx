@@ -1,16 +1,16 @@
 import React from 'react'
 import { CommandMenu } from '../Command-Menu'
 import ButtonToggle from './ButtonToggle'
-import CartBtn from '@modules/layout/templates/nav'
 import Image from 'next/image'
 import Link from 'next/link'
+import CartBtn from '@modules/layout/templates/nav';
 
 
 
 const Header = () => {
   
   return (
-    <header className="bg-main border-b flex items-center justify-between  border-black p-2">
+    <header className="bg-main border-b flex items-center justify-between sticky top-0 z-50  border-black p-2">
       <Link href={'/'} className='cursor-pointer  hidden md:block'>
       <div className="relative w-12 h-12 flex items-center justify-center ">
           <Image
