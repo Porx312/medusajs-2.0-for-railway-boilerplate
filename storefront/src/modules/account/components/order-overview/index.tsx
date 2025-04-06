@@ -9,11 +9,11 @@ import { HttpTypes } from "@medusajs/types"
 const OrderOverview = ({ orders }: { orders: HttpTypes.StoreOrder[] }) => {
   if (orders?.length) {
     return (
-      <div className="flex flex-col gap-y-8 sidebar-bg w-full">
+      <div className="flex flex-col gap-y-8  w-full">
         {orders.map((o) => (
           <div
             key={o.id}
-            className="border-b  pb-6 last:pb-0 last:border-none"
+            className="  pb-6 last:pb-0 last:border-none"
           >
             <OrderCard order={o} />
           </div>
