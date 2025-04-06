@@ -75,7 +75,7 @@ export default function Sidebar({ className }: SidebarProps) {
   return (
     <>
       {/* Versión de escritorio - siempre visible en md+ */}
-      <aside className={cn("w-16 md:block hidden bg-main border-r border-black  p-4", className)}>
+      <aside className={cn("w-16 md:block hidden bg-main  border-r border-black  p-4", className)}>
         {sidebarContent}
       </aside>
 

@@ -14,14 +14,14 @@ interface LayoutProps {
 
 export default function LayoutIde({ children }: LayoutProps) {
   return (
-    <div className=" flex h-[100vh] flex-col justify-between bg-main ">
+    <div className="flex h-[100vh] overflow-hidden flex-col justify-between bg-main ">
     <SidebarProvider>
     <EcommerceConsoleProvider>
 
       {/* Header */}
      <Header/>
 
-      <div className="flex flex-1   border-x border-black">
+      <div className="flex flex-1 border-x border-black">
         {/* Sidebar */}
         <Sidebar/>
         <ResizablePanelGroup direction="horizontal">
@@ -32,7 +32,7 @@ export default function LayoutIde({ children }: LayoutProps) {
   <ResizablePanel defaultSize={85}>
 
         {/* Main Content */}
-        <main className="flex-1 flex relative  flex-col item-center w-full  overflow-y-auto justify-between background-main  ">
+        <main className="flex-1 flex relative flex-col item-center w-full h-[90vh]  overflow-y-auto justify-between background-main  ">
           {children}
 
   </main>
